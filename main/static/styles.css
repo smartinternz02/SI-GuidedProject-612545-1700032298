@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Body style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('summary-paragraph.jpeg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header style */
+h1, h2 {
+    text-align: center;
+    color: #ffffff; /* Text color */
+    padding-top: 20px; /* Adjust spacing from the top */
+}
+
+/* Links style */
+a {
+    color: #ffffff; /* Link color */
+}
+
+/* Form style */
+form {
+    text-align: center;
+    margin-top: 30px; /* Adjust form's top margin */
+}
+
+/* Textarea style */
+textarea {
+    width: 60%; /* Adjust width */
+    height: 200px; /* Adjust height */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+/* Submit button style */
+input[type="submit"] {
+    background-color: #007bff; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Result text style */
+p {
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Adjust padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+}

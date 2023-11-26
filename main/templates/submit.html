@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Submit Text</h2>
+    <form action="/submit" method="POST">
+        <!-- Textarea for Summary -->
+        <label for="text">Enter your text to summarize:</label><br>
+        <textarea id="text" name="text" rows="10" cols="50"></textarea><br><br>
+        
+        <!-- Textarea for Feedback -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Summarize">
+    </form>
+    
+    <!-- The summarization result will be displayed here -->
+    <p>Summarized Text:</p>
+    <p>{{ predictionText }}</p>
+</body>
+</html>

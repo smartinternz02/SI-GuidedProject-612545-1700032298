@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        function showFeedbackForm() {
+            document.getElementById("feedbackForm").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Text Summarization App</h1>
+    <form action="/submit" method="POST">
+        <h2>Summarize Text</h2>
+        <textarea name="text" rows="10" cols="50"></textarea><br><br>
+        <input type="submit" value="Summarize">
+    </form>
+
+    <!-- Link to show Feedback Form -->
+    <a href="#" onclick="showFeedbackForm()">Give Feedback</a>
+
+    <!-- Feedback Form -->
+    <div id="feedbackForm">
+        <h2>Feedback Form</h2>
+        <form action="/submit_feedback" method="POST">
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</body>
+</html>
